@@ -9,7 +9,7 @@ class PetBrowser extends React.Component {
     return this.props.pets.map(pet => <Pet pet={pet} onAdoptPet={this.props.onAdoptPet}/>)
     //pet is the {} we are passing an entire object as a prop
   }
-
+  
   render() {
     return <div className="ui cards">
     {this.renderPetCards()}

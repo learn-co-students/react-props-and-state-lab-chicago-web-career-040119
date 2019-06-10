@@ -2,10 +2,10 @@ import React from 'react'
 
 class Filters extends React.Component {
 
-handleChange = (event) => {
-  this.props.onChangeType(event.target.value)
-}
-  handleClick = this.props.onFindPetsClick
+  handleChange = (event) => {
+    this.props.onChangeType(event.target.value)
+  }
+  // handleClick = this.props.onFindPetsClick
 
   render() {
     return (
@@ -21,7 +21,7 @@ handleChange = (event) => {
         </div>
 
         <div className="field">
-          <button onClick={this.handleClick} className="ui secondary button">Find pets</button>
+          <button onClick={this.props.onFindPetsClick} className="ui secondary button">Find pets</button>
         </div>
       </div>
     )
